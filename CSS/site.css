@@ -1,6 +1,6 @@
   :root {
     --primary-color: #1d5888;
-    --secondary-color:#ff993b;
+    --secondary-color:#eb3312;
     --dark-color:#292929;
     --white-color: #f6ebeb;
     --logo-blue:#3670f8;
@@ -53,10 +53,10 @@
   .cssicon {
     color: rgb(48, 61, 240);
   }
-/* 
+
   .checklist >li i{
-   color: #ff993b;
-  } */
+   color: #eb3312;
+  } 
 
 code[class*="language-"],
     pre[class*="language-"] {
