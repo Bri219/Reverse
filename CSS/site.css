@@ -6,9 +6,12 @@
     --logo-blue:#3670f8;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
   body {
     color: var(--dark-color);
     /* overflow-y:hidden; */
+    font-family: 'Racing Sans One', cursive; 
   }
 
   nav {
@@ -76,9 +79,10 @@ font-size: 18vw;
 }
 
 img {
-
 max-width: 100%;
-
 height: auto;
+}
 
+img.svg-banner {
+  height: 65px;
 }

@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/prism.css">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png">
 
 
@@ -43,7 +44,7 @@
                         <a class="nav-link" target="_blank" href="https://github.com/Bri219/Reverse">Git Repo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">About</a>
+                        <a class="nav-link" target="_blank" href="https://b-aponte-main-portfolio.netlify.app/">About</a>
                     </li>
                 </ul>
             </div>
@@ -58,14 +59,44 @@
                 <div class="col-lg-8">
                     <pre class="line-numbers">
                         <code class="language-javascript">
-                        //Call Hello World
-                         function HelloWorld() {
-                         alert("hello world!");
-                        }</code>
+                            // Get the String from the page
+                            // Controller Function
+                            function getValue(){
+                            
+                              document.getElementById("alert").classList.add("invisible");
+                              let userString = document.getElementById("userString").value;
+                              let revString = reverseString(userString);
+                              displayString(revString);
+                            }
+                            
+                            
+                            // Reverse the String
+                            // Login Function
+                            function reverseString(userString){
+                            
+                              let revString = [];
+                              // Reverse a string using a for loop
+                              for (let index = userString.length - 1; index >= 0; index--) {
+                                   revString += userString[index];
+                              }
+                              return revString;
+                            }
+                            
+                            
+                            // Display the reversed String to the user
+                            // View Function
+                            function displayString(revstring){
+                            
+                              //write to page
+                              document.getElementById("msg").innerHTML = `Your string reversed is: ${revstring}`;
+                              //show the alert box
+                              document.getElementById("alert").classList.remove("invisible");
+                            }
+                        </code>
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structered in one function</p>
+                    <p>The Code is structered in three functions</p>
                     <h5>Hello World</h5>
                     <p>Hello World is a function that displays an alert with a message of "Hello World".</p>
                 </div>
