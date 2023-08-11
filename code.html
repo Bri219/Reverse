@@ -13,10 +13,11 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/prism.css">
-    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png">
-
-
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -97,8 +98,26 @@
                 </div>
                 <div class="col-lg-4">
                     <p>The Code is structered in three functions</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that displays an alert with a message of "Hello World".</p>
+                    <h5 class="titleTags">getValue</h5><strong></strong>
+                    <p>The first function, <strong>getValue()</strong>, is the controller function that gets the string from the page.
+                      It does this by accessing the value of the element with the id of “userString” and storing it in a variable called userString.
+                       Then, it calls another function, <strong>reverseString(userString)</strong>, passing it the user’s input as an argument. 
+                       This function returns the reversed version of the user’s string, which is then stored in another variable called <strong>revString</strong>. 
+                       Finally, the controller function calls a third function,<strong>displayString(revString)</strong> , passing it the reversed string as an argument.
+                        This function displays the result to the user on the page.</p>
+                    <br> 
+                    <h5 class="titleTags">reverseString</h5>
+                        <p>The second function,  <strong>reverseString(userString)</strong>, is the logic function that reverses the string. 
+                        It does this by creating an empty array called <strong>revString</strong> and using a for loop to iterate over each character of the user’s string in reverse order. 
+                        For each iteration, it appends the current character to the end of the <strong>revString array</strong>, effectively reversing the order of the characters. 
+                        Then, it returns the <strong>revString</strong> array as a single string.</p>
+                    <br>
+                    <h5 class="titleTags">displayString</h5>
+                    <p>The third function, <strong>displayString(revstring)</strong>, is the view function that displays the reversed string to the user.
+                         It does this by writing to the element with the id of “msg” and inserting the reversed string into a template literal that says “Your string reversed is: …”. 
+                         Then, it removes the “invisible” class from the element with the id of “alert”, which makes it visible on the page. 
+                         This way, the user can see their input and output.</p>
+                    <br>
                 </div>
             </div>
         </div>
