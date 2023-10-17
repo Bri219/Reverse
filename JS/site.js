@@ -1,7 +1,8 @@
+
 // Get the String from the page
 // Controller Function
 function getValue(){
-
+  
   document.getElementById("alert").classList.add("invisible");
   let userString = document.getElementById("userString").value;
   let revString = reverseString(userString);
