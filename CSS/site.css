@@ -75,13 +75,14 @@ code[class*="language-"],
  @media screen and (max-width: 400px) {
 .responsiveicon {
 font-size: 18vw;
-}
+ }
 }
 
 img {
 max-width: 100%;
 height: auto;
 }
+
 
 img.svg-banner {
   height: 65px;
@@ -90,3 +91,4 @@ img.svg-banner {
 .titleTags {
   color: var(--logo-blue)
 }
+
